@@ -1,12 +1,36 @@
-# React + Vite
+# 📚 Open Library Book Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Tailwind CSS web application that allows users to search for books using the **Open Library API**.  
+You can search by **book title** or **author name**, view book details, and check if an **ebook is available** for reading or borrowing through the **Internet Archive**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 🔎 Search books by **title** or **author** (single or combined search).
+- 📖 Display key details:
+  - Title
+  - Author(s)
+  - First publish year
+  - Edition count
+  - Languages
+- 🖼️ Show book cover images using `cover_i`.
+- ✅ Ebook availability:
+  - **Borrowable / Public** indicator
+  - **Read / Borrow button** redirects to the Internet Archive.
+- ❌ If ebook not available, shows a message.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **React** (Vite)
+- **TypeScript**
+- **Tailwind CSS**
+- **Open Library API**  
+  - `https://openlibrary.org/search.json?title={bookTitle}`
+  - `https://openlibrary.org/search.json?author={authorName}`
+- **Covers API**  
+  - `https://covers.openlibrary.org/b/id/{cover_i}-L.jpg`
+
+---
+
+## 📂 Project Structure
