@@ -34,3 +34,19 @@ You can search by **book title** or **author name**, view book details, and chec
 ---
 
 ## 📂 Project Structure
+src/
+├── components/
+│ ├── BookCard.tsx # UI for displaying book details
+│ └── SearchBar.tsx # Search input for title/author
+├── App.tsx # Main app logic
+├── main.tsx # React entry point
+└── index.css # Tailwind CSS styles
+
+
+git clone https://github.com/your-username/open-library-app.git
+cd open-library-app
+
+npm install
+
+npm run dev
+
